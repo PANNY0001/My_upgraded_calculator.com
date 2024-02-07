@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Creator" content="John Phoenix Baclayon"/>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="Container">
+		<div id="header">
+			<h1>My First Calculator</h1>
+	</div>
+	<div id="Content">
+		<div id="nav">
+			<h3>Navigation</h3>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=BBJa32lCaaY">Home</a></li>
+				<br>
+				<li><a href="https://www.youtube.com/watch?v=XfqOB4hvxlY">About</a></li>
+				<br>
+				<li><a href="https://www.facebook.com/profile.php?id=100069803715032/">Contact</a></li>
+			</ul><iframe width="320" height="240" src="https://www.youtube.com/embed/yBIG8rwvRk8?mute=1">
+			</iframe>
+		</div>
+		<div id="main">
+			<h2>The History of Calculator</h2>
+			<p>There once was a time when written numbers did not exist. Man had only his fingers and toes to use as counting devices — and counting sheep and crops using fingers, toes, rocks and shells will get you only so far.</p>
+			
+			<p>So human civilization invented the abacus, which the <u>Computer History Museum</u> suggests is “the oldest continuously used calculating tool aside from fingers.”</p>
+			
+			<p>Though still in use in today, the abacus was merely the beginning of mankind’s interest in calculating machines, which have evolved radically over the years. Here we share with you a visual history of some notable calculating firsts.<a href="https://edtechmagazine.com/k12/article/2012/11/calculating-firsts-visual-history-calculators"><p><u>Learn more.</u></p></a></p>
+
+
+			<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<a href="https://www.youtube.com/watch?v=Ades3pQbeh8">
+  				<img src="one_piece.jfif" style="width:100%" "height:20%">
+  				</a>
+			</div>
+
+			<div class="mySlides fade">
+				<a href="https://www.youtube.com/watch?v=Poo5lqoWSGw">
+  				<img src="one_punche_man.jpg" style="width:100%" "height:20%">
+  				</a>
+			</div>
+
+			<div class="mySlides fade">
+				<a href="https://www.youtube.com/watch?v=l2mag0-sn80">
+  				<img src="zom-100-bucket-list-of-the-dead-key-visual.jpg" style="width:100%" "height:20%">
+  				</a>
+			</div>
+
+			<div class="mySlides fade">
+				<a href="https://www.youtube.com/watch?v=LVpiqOh-524">
+ 				<img src="tokyo-revengers-tenjiku-hen.webp" style="width:100%" "height:20%">
+ 				</a>
+			</div>
+
+			<div class="mySlides fade">
+				<a href="https://www.youtube.com/watch?v=Pm-wNmS9RGI">
+  				<img src="hocmarketing-org-og-44503-unveiling-the-thrilling-new-shibuya-incident-arc-trailer-and-key-visual-for-jujutsu-kaisen-season-2.jpg" style="width:100%" height:50%">
+  				</a>
+			</div>
+
+			<div class="mySlides fade">
+				<a href="https://www.youtube.com/watch?v=Jd_B6ox3qGc">
+  				<img src="Demon Slayer season two.jpg" style="width:100%" "height:18%">
+  				</a>
+			</div>
+
+			</div>
+			<br>
+			<div style="text-align:center">
+  				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+			<h6>Click the AD to direct to the trailer.<span>&#8593;</span></h6>
+			<script>
+				let slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+				    slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+				    dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 2000); // Change image every 5 seconds
+				}
+			</script>
+				<hr><br>
+			<h2>Here Is My Calculator</h2>
+				<div class="wrap">
+
+							<form name = "cal">
+									<input type ="text" name="display">
+									<br><br>
+									<input type="button" value="7" onclick="cal.display.value += '7'">
+									<input type="button" value="8" onclick="cal.display.value += '8'">
+									<input type="button" value="9" onclick="cal.display.value += '9'">
+									<input type="button" value="+" onclick="cal.display.value += '+'">
+									<br><br>
+									<input type="button" value="4" onclick="cal.display.value += '4'">
+									<input type="button" value="5" onclick="cal.display.value += '5'">
+									<input type="button" value="6" onclick="cal.display.value += '6'">
+									<input type="button" value="-" onclick="cal.display.value += '-'">
+									<br><br>
+									<input type="button" value="1" onclick="cal.display.value += '1'">
+									<input type="button" value="2" onclick="cal.display.value += '2'">
+									<input type="button" value="3" onclick="cal.display.value += '3'">
+									<input type="button" value="x" onclick="cal.display.value += '*'">
+									<br><br>
+									<input type="button" value="0" onclick="cal.display.value += '0'">
+									<input type="button" value="/" onclick="cal.display.value += '/'">
+									<input type="button" value="." onclick="cal.display.value += '.'">
+									<input type="button" value="=" onclick="cal.display.value =eval (cal.display.value)">
+									<br><br>
+									<input type="button" value="DELETE" onclick="cal.display.value= ''" id="del" />
+							</form>
+				</div>
+		</div>
+		<div id="footer">
+			<img src="" width="height">
+			<hr>
+			<b><u>Copyright &copy;John Phoenix 2024</u></b>
+		</div>
+	</div>
+</body>
+</html>
